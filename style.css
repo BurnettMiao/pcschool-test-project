@@ -319,7 +319,7 @@ nav {
 }
 
 .info-padding {
-  padding: 60px 15px 30px 15px;
+  padding: 60px 15px 60px 15px;
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
@@ -384,4 +384,95 @@ nav {
 
 .info-icon-detail h3 {
   font-weight: 400;
+}
+
+/* video section */
+#video-course {
+  background-color: var(--background-color-light-gray);
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+}
+
+#video-course .heading h2::after {
+  content: '';
+  position: absolute;
+  color: #3f3f3f;
+  top: -20px;
+  width: 60px;
+  height: 30px;
+  background-image: url(images/video-ico.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.video-1 {
+  background-image: url('images/fafdbc77420f465f83f53e2c40d10e44.jpg');
+}
+
+.video-2 {
+  background-image: url('images/09204448e41b4b27af8ee2cfc0a33724.jpg');
+}
+
+.video-3 {
+  background-image: url('images/f239fd3d5c0e46be839389b3055508d5.png');
+}
+
+.video-4 {
+  background-image: url('images/bd8b39e43c444eab8c6af831a9dde1ab.jpg');
+}
+
+#video-course .course-cards {
+  align-items: stretch;
+}
+
+#video-course .card-footer {
+  align-items: flex-end;
+}
+
+.card-footer div {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-footer div .delete {
+  color: var(--text-color-gray);
+  text-decoration: line-through;
+  font-size: 12px;
+}
+
+/* banner section */
+
+/* free course section */
+#free-course {
+  background-color: var(--background-color-light-gray);
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+}
+
+#free-course .heading h2::after {
+  content: '';
+  position: absolute;
+  color: #3f3f3f;
+  top: -20px;
+  width: 60px;
+  height: 30px;
+  background-image: url(images/free-ico.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.free-1 {
+  background-image: url('images/b17dc252cbf846cb9bc65a416d75f37c.jpg');
+}
+
+.free-2 {
+  background-image: url('images/1e5b2fb432f247b696cfad1d50fa60d2.jpg');
+}
+
+.free-3 {
+  background-image: url('images/7cc469104092464182808bf783dd327c.jpg');
+}
+
+.free-4 {
+  background-image: url('images/975cdbe6c41a4d3f910d11fa8652b048.png');
 }
