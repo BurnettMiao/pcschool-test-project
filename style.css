@@ -6,10 +6,13 @@
   --text-color-gray: rgba(0, 0, 0, 0.57);
   --background-color-white: #fff;
   --background-color-gray: #f3f3f3;
+  --background-color-light-gray: #fafafa;
   --background-color-green: #2e494c;
   --btn-background-color-gray: #6c757d;
   --btn-background-color-dark: #343a40;
-  --nav-hover-color: #dc3545;
+  --nav-hover-color: #e94941;
+  --padding-top: 60px 0 0 0;
+  --label-color: #82bd17;
 }
 
 * {
@@ -62,6 +65,11 @@ button {
 button:hover {
   background-color: var(--btn-background-color-dark);
   border: 1px solid var(--btn-background-color-dark);
+}
+
+hr {
+  margin-top: 6px;
+  border: 1px solid var(--background-color-gray);
 }
 
 .container {
@@ -164,4 +172,127 @@ nav {
 
 .search-container input {
   flex: 1;
+}
+
+/* hot course section */
+#hot-course {
+  padding: var(--padding-top);
+  background-color: var(--background-color-light-gray);
+}
+
+.heading {
+  position: relative;
+  border-left: 3px solid var(--nav-hover-color);
+}
+
+.heading h2 {
+  color: var(--text-color-black);
+  margin-bottom: 6px;
+  padding-left: 15px;
+  line-height: 1.2;
+  font-size: 28px;
+}
+
+#hot-course .heading h2::after {
+  content: '';
+  position: absolute;
+  color: #3f3f3f;
+  top: -20px;
+  width: 50px;
+  height: 30px;
+  background-image: url(images/hot-ico.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.heading p {
+  color: var(--text-color-gray);
+  padding-left: 15px;
+  vertical-align: baseline;
+}
+
+.course-cards {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 255px;
+  max-width: 330px;
+  border-radius: 10px;
+  background-color: var(--background-color-white);
+  overflow: hidden;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+  width: 100%;
+  height: 145px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hot-1 {
+  background-image: url('images/6f066eb7e38b42dab40a769f9946cf1c.jpg');
+}
+
+.hot-2 {
+  background-image: url('images/20f9dc63aed04fbc8c010fa28c6e4f49.jpg');
+}
+
+.hot-3 {
+  background-image: url('images/a6af6612e23d4c5ea555e05388d7735d.jpg');
+}
+
+.hot-4 {
+  background-image: url('images/29046865faee458f9d310f507d560f89.jpg');
+}
+
+.card-content {
+  padding: 8px;
+}
+
+.card-content h3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  color: var(--text-color-black);
+  font-weight: 400;
+}
+
+.card-content p {
+  color: var(--text-color-gray);
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.card-content label {
+  background-color: var(--label-color);
+  color: var(--background-color-light-gray);
+  border-radius: 2px;
+  padding: 1px 6px;
+  font-size: 13px;
+}
+
+.card-footer {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-footer span {
+  font-size: 14px;
+  color: var(--text-color-gray);
+}
+
+.card-footer .price {
+  color: var(--nav-hover-color);
+  font-size: 18px;
 }
