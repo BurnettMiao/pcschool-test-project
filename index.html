@@ -3,10 +3,107 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>窩課 360</title>
   </head>
   <body>
+    <nav>
+      <div class="container nav-container">
+        <div class="brand-courses">
+          <div class="brand-container">
+            <img src="images/brand.png" alt="" />
+          </div>
+          <div class="courses-lists">
+            <ul>
+              <li>
+                <a href="#"
+                  >所有課程 <span><i class="fa-solid fa-chevron-down"></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="#">產業專欄</a>
+              </li>
+              <li>
+                <a href="#"
+                  >個性推薦 <span><i class="fa-solid fa-chevron-down"></i></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="infos">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <i class="fa-solid fa-circle-user"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/slides-pic/01111tc3-CompTIA Security.jpg" alt="" />
+        </div>
+
+        <div class="swiper-slide">
+          <img
+            src="images/slides-pic/01495tc3_Key_Ideas_for_Realizing_Online_Fiction_Shelves_BN_1280x720.png"
+            alt=""
+          />
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/slides-pic/640-360.jpg" alt="" />
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/slides-pic/DiT000445_640x360.jpg" alt="" />
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/slides-pic/DiT000447640x360.jpg" alt="" />
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/slides-pic/DiT000448_640x360.jpg" alt="" />
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/slides-pic/DiT000476_640x360.jpg" alt="" />
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/slides-pic/DiT000495_640x360.png" alt="" />
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/slides-pic/DiT000508_640x360.jpg" alt="" />
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/slides-pic/DiT000509_640x360.jpg" alt="" />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- <div class="swiper-pagination"></div> -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

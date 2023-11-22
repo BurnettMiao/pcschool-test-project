@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --max-width: 1140px;
+  --text-color-black: rgba(0, 0, 0, 0.7);
+  --text-color-gray: rgba(0, 0, 0, 0.57);
+  --background-color-white: #fff;
+  --background-color-gray: #f3f3f3;
+  --background-color-green: #2e494c;
+  --btn-background-color-gray: #6c757d;
+  --btn-background-color-dark: #343a40;
+  --nav-hover-color: #dc3545;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color-black);
+}
+
+a:hover {
+  color: var(--nav-hover-color);
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: var(--max-width);
+  padding: 0 15px;
+  margin: auto;
+}
+
+/* nav section */
+nav {
+  background-color: var(--background-color-white);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-container {
+  width: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.brand-container img {
+  width: 100%;
+}
+
+.brand-courses {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.courses-lists ul {
+  display: flex;
+}
+
+.courses-lists ul li {
+  padding: 12px;
+}
+
+.infos i {
+  font-size: 24px;
+  padding: 10px 15px;
+  color: var(--text-color-gray);
+}
+
+/* slide section */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 628px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next:after {
+  content: '\f138';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.6);
+  text-shadow: 1px 1px 10px #000;
+  padding-right: 50px;
+}
+
+.swiper-button-prev:after {
+  content: '\f137';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.6);
+  text-shadow: 1px 1px 10px #000;
+  padding-left: 50px;
+}
