@@ -37,6 +37,33 @@ ul {
   list-style: none;
 }
 
+input,
+select {
+  padding: 6px 12px;
+  font-size: 16px;
+  color: var(--text-color-gray);
+  border: 1px solid var(--btn-background-color-gray);
+  outline: none;
+  border-radius: 2px;
+}
+
+button {
+  padding: 6px;
+  background-color: var(--btn-background-color-gray);
+  color: var(--background-color-white);
+  border: 1px solid var(--btn-background-color-gray);
+  outline: none;
+  letter-spacing: 6px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--btn-background-color-dark);
+  border: 1px solid var(--btn-background-color-dark);
+}
+
 .container {
   max-width: var(--max-width);
   padding: 0 15px;
@@ -122,4 +149,19 @@ nav {
   color: rgba(255, 255, 255, 0.6);
   text-shadow: 1px 1px 10px #000;
   padding-left: 50px;
+}
+
+/* search section */
+#search {
+  background-color: var(--background-color-gray);
+  padding: 15px;
+}
+
+.search-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search-container input {
+  flex: 1;
 }
