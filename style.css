@@ -488,6 +488,37 @@ nav {
   font-size: 12px;
 }
 
+.video-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.video {
+  border: 1px solid var(--text-color-gray);
+  background-color: var(--background-color-white);
+  border-radius: 2px;
+  color: var(--text-color-gray);
+  font-weight: 300;
+  padding: 2px 4px;
+  font-size: 14px;
+  margin-right: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.video:hover {
+  border: 1px solid var(--nav-hover-color);
+  background-color: var(--nav-hover-color);
+  color: var(--background-color-white);
+}
+
+.video.active {
+  border: 1px solid var(--nav-hover-color);
+  background-color: var(--nav-hover-color);
+  color: var(--background-color-white);
+}
+
 /* banner section */
 #banner {
   background-color: var(--background-color-light-gray);
