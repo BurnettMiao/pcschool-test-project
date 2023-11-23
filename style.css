@@ -242,7 +242,7 @@ nav {
 }
 
 .card {
-  flex: 1 1 255px;
+  flex: 1 1 230px;
   max-width: 330px;
   border-radius: 10px;
   background-color: var(--background-color-white);
