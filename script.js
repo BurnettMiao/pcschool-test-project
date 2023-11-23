@@ -1,6 +1,6 @@
 var swiper = new Swiper('.mySwiper', {
-  slidesPerView: 1,
-  spaceBetween: 10,
+  slidesPerView: 3,
+  spaceBetween: 480,
   centeredSlides: true,
   loop: true,
   autoplay: {
@@ -11,20 +11,20 @@ var swiper = new Swiper('.mySwiper', {
     el: '.swiper-pagination',
     clickable: true,
   },
-  breakpoints: {
-    640: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 520,
-    },
-    1024: {
-      slidesPerView: 3,
-      spaceBetween: 580,
-    },
-  },
+  // breakpoints: {
+  //   640: {
+  //     slidesPerView: 1,
+  //     spaceBetween: 20,
+  //   },
+  //   768: {
+  //     slidesPerView: 3,
+  //     spaceBetween: 580,
+  //   },
+  //   1024: {
+  //     slidesPerView: 3,
+  //     spaceBetween: 580,
+  //   },
+  // },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

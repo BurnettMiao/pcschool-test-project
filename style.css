@@ -874,8 +874,18 @@ nav {
   .card {
     flex: 1 1 220px;
   }
+  /* search section */
+  .main-select,
+  .sub-select {
+    display: none;
+  }
+
   /* banner section */
   #banner {
+    display: none;
+  }
+
+  .video-tag-filter {
     display: none;
   }
 
@@ -922,12 +932,6 @@ nav {
 }
 
 @media (width < 575px) {
-  /* search section */
-  .main-select,
-  .sub-select {
-    display: none;
-  }
-
   /* info section */
   .info-icon {
     width: 40px;
