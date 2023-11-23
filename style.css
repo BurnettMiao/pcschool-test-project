@@ -781,6 +781,12 @@ nav {
 }
 
 /* media queries */
+@media (width < 2100px) {
+  .swiper-slide img {
+    width: 100%;
+  }
+}
+
 @media (width < 1000px) {
   .info-padding {
     flex-direction: column;
@@ -802,6 +808,14 @@ nav {
     max-width: 720px;
   }
 
+  .swiper-slide img {
+    width: 90%;
+  }
+
+  /* .swiper-slide img {
+    width: 484px;
+  } */
+
   /* nav section */
   .hamburger {
     display: inline-block;
@@ -809,10 +823,6 @@ nav {
 
   .courses-lists {
     display: none;
-  }
-
-  .swiper-slide img {
-    width: 484px;
   }
 
   /* infos section */
@@ -932,6 +942,10 @@ nav {
 }
 
 @media (width < 575px) {
+  .swiper-slide img {
+    width: 100%;
+  }
+
   /* info section */
   .info-icon {
     width: 40px;
