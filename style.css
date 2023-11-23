@@ -488,13 +488,13 @@ nav {
   font-size: 12px;
 }
 
-.video-container {
+.video-tag-container {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
 }
 
-.video {
+.tag {
   border: 1px solid var(--text-color-gray);
   background-color: var(--background-color-white);
   border-radius: 2px;
@@ -507,13 +507,13 @@ nav {
   transition: all 0.2s ease;
 }
 
-.video:hover {
+.tag:hover {
   border: 1px solid var(--nav-hover-color);
   background-color: var(--nav-hover-color);
   color: var(--background-color-white);
 }
 
-.video.active {
+.tag.active {
   border: 1px solid var(--nav-hover-color);
   background-color: var(--nav-hover-color);
   color: var(--background-color-white);
