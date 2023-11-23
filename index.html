@@ -20,7 +20,7 @@
   </head>
   <body>
     <nav>
-      <div class="container nav-container">
+      <div class="nav-container">
         <div class="brand-courses">
           <div class="brand-container">
             <img src="images/brand.png" alt="" />
@@ -47,6 +47,7 @@
         <div class="infos">
           <i class="fa-solid fa-magnifying-glass"></i>
           <i class="fa-solid fa-cart-shopping"></i>
+          <i class="fa-solid fa-bars hamburger"></i>
           <i class="fa-solid fa-circle-user"></i>
         </div>
       </div>
@@ -107,7 +108,7 @@
     <section id="search">
       <div class="container search-container">
         <input type="text" placeholder="輸入關鍵字搜尋課程" />
-        <select name="" id="">
+        <select name="" id="" class="main-select">
           <option selected="selected" value="">請選擇主分類</option>
           <option value="">視覺設計</option>
           <option value="">網頁特效</option>
@@ -124,7 +125,7 @@
           <option value="">語言學習</option>
           <option value="">電繪與手繪</option>
         </select>
-        <select name="" id="">
+        <select name="" id="" class="sub-select">
           <option selected="selected" value="">請選擇課程次分類</option>
         </select>
         <button class="btn">搜 尋</button>
@@ -260,9 +261,10 @@
     <!-- video course section -->
     <section id="video-course">
       <div class="container">
-        <div class="heading video-tag-container">
-          <h2>影音課程</h2>
-
+        <div class="video-tag-container">
+          <div class="heading">
+            <h2>影音課程</h2>
+          </div>
           <div class="video-tag-filter">
             <span class="tag active">最新</span>
             <span class="tag">熱門</span>
@@ -551,6 +553,12 @@
           <div class="footer-contact">
             <div class="footer-img">
               <img src="images/footer-brand-big.png" alt="" />
+              <div class="socials">
+                <span><i class="fa-brands fa-square-facebook"></i></span>
+                <span><i class="fa-brands fa-line"></i></span>
+                <span><i class="fa-brands fa-square-instagram"></i></span>
+                <span><i class="fa-brands fa-square-youtube"></i></span>
+              </div>
             </div>
             <div class="footer-contact-lists">
               <div class="list-left">
@@ -585,6 +593,11 @@
           本網站已經依據台灣網站內容分級管理 巨匠電腦 版權所有 ©2021 Gjun
           information Co., Ltd. All Rights Reserved
         </p>
+
+        <div class="small-copyright">
+          <p class="mr-1">本網站已經依據台灣網站內容分級管理</p>
+          <p>巨匠電腦 版權所有</p>
+        </div>
       </div>
     </footer>
 
