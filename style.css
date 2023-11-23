@@ -607,3 +607,79 @@ nav {
   border: 1px solid var(--background-color-white);
   color: var(--background-color-white);
 }
+
+/* footer section */
+#footer {
+  background-color: var(--background-color-light-gray);
+  color: var(--info-text-color);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-about {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-right: 48px;
+}
+
+.footer-about ul li:first-child {
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+}
+
+.footer-about ul li:not(:first-child) {
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.footer-about a {
+  color: var(--info-text-color);
+}
+
+.footer-contact {
+  flex: 1;
+}
+
+.footer-contact .footer-img {
+  width: 120px;
+}
+
+.footer-contact-lists {
+  margin-top: 24px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.service {
+  display: flex;
+  padding: 10px 0;
+}
+
+.technology {
+  display: flex;
+  padding: 10px 0;
+}
+
+.technology-time p:not(:first-child) {
+  padding: 5px 0;
+}
+
+.list-right p {
+  padding: 10px 0;
+}
+
+.copyright {
+  padding: 18px 0;
+}
