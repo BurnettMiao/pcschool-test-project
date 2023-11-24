@@ -180,6 +180,10 @@ nav {
   padding-left: 50px;
 }
 
+.swiper-pagination {
+  display: none;
+}
+
 /* search section */
 #search {
   background-color: var(--background-color-gray);
@@ -948,6 +952,15 @@ nav {
 @media (width < 575px) {
   .swiper-slide img {
     width: 100%;
+  }
+
+  .swiper-pagination {
+    display: inline-block;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
   }
 
   /* course */
